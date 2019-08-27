@@ -1,0 +1,39 @@
+.image-container {
+    display: flex;
+    margin-bottom: 10px
+}
+
+.image-view-section {
+    max-height: 100vh;
+    max-width: 50%;
+    cursor: none;
+}
+
+.image-view-section img{
+    max-height: 100vh;
+    max-width: 100%;
+}
+
+.image-selector {
+    border: 1px solid rgb(112, 112, 112);
+    opacity: 0.6;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    cursor: none;
+    z-index: -1
+}
+
+.zoomed-image-section {
+    padding-left: 5px;
+    padding-right: 5px;
+    max-width: 50%;
+    max-height: calC(100vh - 20px);
+    overflow: hidden;
+}
+
+.zoomed-image-preview{
+    object-fit: cover;
+    /* transform: scale(2); */
+    /* object-position: 100px 0 */
+}
